@@ -1,0 +1,21 @@
+@import '../../styles/partials/variables';
+@import '../../styles/partials/mixins';
+
+.equals {
+  @extend .button-base;
+  @extend .equals;
+  background-color: rgb(110, 162, 246);
+
+  &:hover {
+    background-color: rgb(129, 170, 234);
+  }
+}
+
+.view {
+  background-color: $digit-buttons-bg-color;
+  @extend .button-base;
+
+  &:hover {
+    background-color: $digit-buttons-bg-color-hover;
+  }
+}

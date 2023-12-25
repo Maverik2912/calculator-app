@@ -1,0 +1,11 @@
+@import '../../styles/partials/variables';
+@import '../../styles/partials/mixins';
+
+.view {
+  @extend .button-base;
+  background-color: $other-buttons-bg-color;
+
+  &:hover {
+    background-color: $other-buttons-bg-color-hover;
+  }
+}

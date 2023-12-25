@@ -1,0 +1,25 @@
+import {config} from 'dotenv';
+
+config();
+
+export const configs = {
+    PORT: process.env.PORT,
+    CURRENT_DB: process.env.CURRENT_DB,
+    COLLECTION_TITLE: process.env.COLLECTION_TITLE,
+    HISTORY_MODULE_STATE: process.env.HISTORY_MODULE_STATE,
+    LOG_LEVEL: process.env.LOG_LEVEL,
+
+    POSTGRES_DATA_VOLUME: process.env.POSTGRES_DATA_VOLUME,
+    POSTGRES_PORT: process.env.POSTGRES_PORT,
+    POSTGRES_DB: process.env.POSTGRES_DB,
+    POSTGRES_USER: process.env.POSTGRES_USER,
+    POSTGRES_PASSWORD: process.env.POSTGRES_PASSWORD,
+    POSTGRES_HOST: process.env.POSTGRES_HOST,
+
+    MONGO_DATA_VOLUME: process.env.MONGO_DATA_VOLUME,
+    MONGO_PORT: process.env.MONGO_PORT,
+    MONGO_INITDB_ROOT_USERNAME: process.env.MONGO_INITDB_ROOT_USERNAME,
+    MONGO_INITDB_ROOT_PASSWORD: process.env.MONGO_INITDB_ROOT_PASSWORD,
+    MONGO_INITDB_DATABASE: process.env.MONGO_INITDB_DATABASE,
+    MONGO_HOST: process.env.MONGO_HOST,
+}

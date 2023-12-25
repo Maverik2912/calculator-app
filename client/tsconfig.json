@@ -1,0 +1,42 @@
+{
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  },
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "strictNullChecks": false,
+    "noImplicitAny": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "noUnusedLocals": true,
+    "paths": {
+      "@client": ["."],
+      "@public": ["./public"],
+      "@src": ["./src"],
+      "@App": ["./App"],
+      "@common-enums": ["./src/common-enums/index"],
+      "@common-interfaces": ["./src/common-interfaces/index"],
+      "@modules": ["./src/modules/index"],
+      "@modules/*": ["./src/modules/index/*"],
+    }
+  },
+  "include": [
+    "src"
+  ]
+}

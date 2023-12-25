@@ -1,0 +1,8 @@
+import {configs} from "../../configs";
+
+const {MONGO_HOST, MONGO_INITDB_ROOT_PASSWORD, MONGO_INITDB_ROOT_USERNAME, POSTGRES_HOST, POSTGRES_PASSWORD, POSTGRES_USER, POSTGRES_DB} = configs;
+
+export const connectionStrings = {
+    mongodb: `mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@${MONGO_HOST}:27017`,
+    postgres: `postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:5432/${POSTGRES_DB}`
+}

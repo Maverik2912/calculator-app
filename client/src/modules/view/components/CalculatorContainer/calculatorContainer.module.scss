@@ -1,0 +1,22 @@
+.container {
+  margin: 0 auto;
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .sub_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .history_container {
+    width: 20vw;
+    max-width: 20vw;
+    background-color: rgb(67, 85, 107);
+    padding: 20px 40px;
+    border-radius: 0 10px 10px 0;
+  }
+}

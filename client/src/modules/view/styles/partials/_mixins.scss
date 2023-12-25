@@ -1,0 +1,21 @@
+@import 'variables';
+
+.button-base {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  padding: 10px 0;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.equalsMixin {
+  @extend .button-base;
+  color: white;
+  font-weight: 700;
+}

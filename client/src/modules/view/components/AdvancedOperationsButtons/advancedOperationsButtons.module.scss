@@ -1,0 +1,18 @@
+@import '../../styles/partials/variables';
+@import '../../styles/partials/mixins';
+
+.advancedOperations {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $default-gap;
+  grid-auto-rows: $buttons-height;
+
+  .operation {
+    @extend .button-base;
+    background-color: $non-digit-buttons-bg-color;
+
+    &:hover {
+      background-color: $non-digit-buttons-bg-color-hover;
+    }
+  }
+}

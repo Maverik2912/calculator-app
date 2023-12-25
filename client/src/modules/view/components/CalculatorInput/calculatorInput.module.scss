@@ -1,0 +1,17 @@
+@import '../../styles/partials/variables';
+
+.calculator_input_container{
+
+  .calculator_input {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    font-size: $input-font-size;
+    background-color: $calculator-bg-color;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: right;
+  }
+}

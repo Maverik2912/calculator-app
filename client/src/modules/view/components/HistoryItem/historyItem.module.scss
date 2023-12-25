@@ -1,0 +1,20 @@
+.history_item{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-weight: 700;
+
+  span {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    overflow-x: auto;
+  }
+  
+  .result {
+    cursor: pointer;
+  }
+
+  .result:hover {
+    color: orange;
+  }
+}
