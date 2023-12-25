@@ -1,0 +1,16 @@
+export enum OutputText {
+    ADD = '+',
+    SUBTRACT = '-',
+    MULTIPLY = '*',
+    DIVIDE = '/',
+    RAISE = 'x^y',
+    SQUARE_ROOT = '√x',
+    CUBE_ROOT = '3√x',
+    FACTORIAL = 'x!',
+    PERCENTAGE = 'x%',
+    LOG = 'log10',
+    COS = 'cos',
+    SIN = 'sin',
+    TAN = 'tan',
+    ATAN = 'atan',
+}

@@ -1,0 +1,35 @@
+{
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  },
+  "compilerOptions": {
+    "target": "ES2021",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "rootDir": ".",
+    "outDir": "./dist",
+    "noImplicitAny": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "removeComments": true,
+    "paths": {
+      "@server": ["."],
+      "@src": ["./src"],
+      "@src/*": ["./src/*"],
+      "@app": ["./app"],
+      "@commonInterface": ["./src/common-interface/index"],
+      "@configs": ["./src/configs/index"],
+      "@constants": ["./src/constants/index"],
+      "@errors": ["./src/errors/index"],
+      "@modules": ["./src/modules/index"],
+      "@modules/*": ["./src/modules/*"],
+      "@odm": ["./src/odm/index"],
+      "@routers": ["./src/routers/index"],
+      "@texts": ["./src/texts/index"],
+      "@utils": ["./src/utils/index"]
+    }
+  }
+}

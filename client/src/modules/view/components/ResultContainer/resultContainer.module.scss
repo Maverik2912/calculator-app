@@ -1,0 +1,15 @@
+@import '../../styles/partials/variables';
+
+.result_container {
+  display: flex;
+  gap: calc($default-gap * 2);
+  font-weight: 700;
+  margin: 10px 0;
+
+  .result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+}

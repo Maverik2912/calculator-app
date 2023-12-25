@@ -1,0 +1,20 @@
+@import '../../styles/partials/variables';
+
+.flex_container {
+  display: flex;
+  justify-content: space-between;
+  gap: calc($default-gap * 4);
+  margin-top: 10px;
+
+  .handlers {
+    position: relative;
+    top: -89px;
+    display: grid;
+    gap: $default-gap;
+    grid-auto-rows: $buttons-height;
+    grid-template-areas: "st0 st1 st2 he0 he1"
+                         "st3 st4 st5 he2 he3"
+                         "st6 st7 st8 si0 si1"
+                         "st9 st10 st11 si2 si3";
+  }
+}
