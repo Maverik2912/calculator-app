@@ -24,9 +24,9 @@ services:
 
   server:
     build:
-      context: ../
+      context: .
       dockerfile:
-        docker/Dockerfile
+        Dockerfile
     env_file:
       - ../server/.env
     ports:
