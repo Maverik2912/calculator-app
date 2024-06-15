@@ -28,7 +28,7 @@ app.use((err: HttpException, _req: Request, res: Response, _next: NextFunction) 
     });
 });
 
-app.listen(configs.PORT, () => {
+app.listen(configs.PORT || 4000, () => {
     if(modulesRegistry.History.state === HistoryModuleState.ENABLED) {
         cronRunner();
         odmRegistry.getCurrentAdapter().connect();
