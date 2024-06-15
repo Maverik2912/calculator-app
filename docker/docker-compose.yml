@@ -1,16 +1,6 @@
 version: "3.9"
 
 services:
-  postgres:
-    image: postgres:16-alpine
-    env_file:
-      - ../server/.env
-    volumes:
-      - "${POSTGRES_DATA_VOLUME:-./store/pg_data}:/var/lib/postgresql/data/"
-    ports:
-      - "${POSTGRES_PORT:-5432}:5432"
-    restart: on-failure
-
   mongodb:
     image: mongo:latest
     env_file:
