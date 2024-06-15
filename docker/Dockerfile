@@ -1,7 +1,7 @@
 FROM node:20.10.0-alpine as build
 RUN mkdir /app
 WORKDIR /app
-COPY ../server .
+COPY server .
 RUN npm install
 
 FROM node:20.10.0-alpine
